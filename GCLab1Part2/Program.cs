@@ -33,20 +33,6 @@ namespace GCLab1Part2
                 inputEnd = Console.ReadLine();
             }
 
-            //// Validation that end date is greater than start date
-            //while (endDate < startDate)
-            //{
-            //    Console.WriteLine("The end date you entered is earlier than your start date. Please provide a later end date.");
-            //    inputEnd = Console.ReadLine();
-            //}
-            ////Re-validate end date
-
-            //while (!DateTime.TryParse(inputEnd, out endDate))
-            //{
-            //    Console.WriteLine("The end date you entered is invalid. Please input a valid end date.");
-            //    inputEnd = Console.ReadLine();
-            //}
-
             //Confirming with user the start and end dates
             Console.WriteLine();
             Console.WriteLine("The start date you entered is {0}.", startDate.Date);
