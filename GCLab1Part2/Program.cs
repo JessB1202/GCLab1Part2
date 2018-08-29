@@ -39,7 +39,6 @@ namespace GCLab1Part2
             //    Console.WriteLine("The end date you entered is earlier than your start date. Please provide a later end date.");
             //    inputEnd = Console.ReadLine();
             //}
-
             ////Re-validate end date
 
             //while (!DateTime.TryParse(inputEnd, out endDate))
@@ -59,17 +58,17 @@ namespace GCLab1Part2
 
             // Difference in days
             diffDays = diffDate.Days;
-            Console.WriteLine("The number of days between {0} and {1} are {2} days.", startDate.Date, endDate.Date, diffDays);
+            Console.WriteLine("The number of days between {0} and {1} are {2} days.", startDate.Date, endDate.Date, Math.Abs(diffDays));
             Console.WriteLine();
 
             // Difference in hours
             diffHours = diffDate.Hours + (diffDays * 24);
-            Console.WriteLine("The number of hours between {0} and {1} are {2} hours.", startDate.Date, endDate.Date, diffHours);
+            Console.WriteLine("The number of hours between {0} and {1} are {2} hours.", startDate.Date, endDate.Date, Math.Abs(diffHours));
             Console.WriteLine();
 
             // Difference in minutes
             diffMins = diffDate.Minutes + (diffHours * 60);
-            Console.WriteLine("The number of minutes between {0} and {1} are {2} minutes.", startDate.Date, endDate.Date, diffMins);
+            Console.WriteLine("The number of minutes between {0} and {1} are {2} minutes.", startDate.Date, endDate.Date, Math.Abs(diffMins));
         }
     }
 }
